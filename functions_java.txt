@@ -1,0 +1,24 @@
+
+import java.util.Scanner;
+
+public class functions {
+   static Scanner console = new Scanner(System.in);
+    
+    public static double Perimeter(double l,double w){
+     return 2*(l+w);
+    }
+    public static double Area(double length,double width){
+        return length*width;
+    }
+    public static void main(String[]args){
+        double length,width,sum,area;
+        System.out.println("Enter the length");
+        length=console.nextDouble();
+        System.out.println("Enter the width");
+        width=console.nextDouble();
+        sum=Perimeter(length,width);
+        area=Area(length,width);
+        System.out.println("The perimetr of this triangle is "+sum);
+        System.out.println("The area of this triangle is "+area);
+    }
+}
