@@ -1,0 +1,39 @@
+
+public class Project_Obj {
+      double length,width;
+
+      public  Project_Obj(double l,double w){
+        length=l;
+        width=w;
+        
+      }
+      public double Calc_Per(){
+        return 2*(length + width); 
+      
+    }
+      public double Calc_Area(){
+          return length * width;
+      }
+      
+      
+}
+
+
+import java.util.Scanner;
+
+public class Calculate {
+    public static void main(String []args){
+        double l,w;
+        Scanner scan= new Scanner(System.in);
+        System.out.println("Enter the length :");
+        l=scan.nextDouble();
+        System.out.println("Enter the width :");
+        w=scan.nextDouble();
+         Project_Obj p = new  Project_Obj(l,w);
+        System.out.println("The perimeter of this triangle is "+p.Calc_Per());
+        System.out.println("The Arae of this triangle is "+p.Calc_Area());
+    }
+}
+
+      
+    
